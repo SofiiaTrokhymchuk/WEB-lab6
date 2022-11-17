@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.download-btn{
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #F17720;
+    color: #EBEBEB;
+}
+
+.download-btn span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.download-info{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.download-info.success{
+    color: #0474BA;
+}
+
+.download-info.error{
+    color: #F17720;
+}
+
+.users-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.user{
+    background: #EBEBEB;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.user img{
+    display: block;
+    margin: auto;
+}
+
+.user h2{
+    padding: 15px 0;
+    font-size: 20px;
+    color: #0474BA;
+}
+
+.user span{
+    display: block;
+    padding: 4px 0;
+}
+
+.user span b{
+    color: #F17720;
+}
+
+.user span a, .user span a:visited, .user span a:active, .user span a:focus{
+    color: inherit;
+}
+
+.user span a:hover{
+    color: #0474BA;
+}
